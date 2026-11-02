@@ -8,7 +8,7 @@
 //
 // 페이지는 마지막 장에서 2초 뒤 스스로 close 를 보낸다.
 
-const PAGE_URL = "https://<github-id>.github.io/bulida-welcome/";
+const PAGE_URL = "https://bulida-ko.github.io/bulida-welcome/";
 const PAGE_ORIGIN = new URL(PAGE_URL).origin;
 
 /**
