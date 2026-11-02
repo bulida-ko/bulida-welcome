@@ -180,19 +180,19 @@ img { display: block; }
   will-change: transform;
 }
 
-/* ── 진행 막대 (스토리처럼) ── */
+/* ── 진행 막대 (화면 아래) ── */
 .bars {
   position: absolute;
-  top: calc(12px + var(--safe-t));
-  left: 16px;
-  right: 16px;
+  bottom: calc(10px + var(--safe-b));
+  left: 50%;
+  width: min(180px, 50%);
+  transform: translateX(-50%);
   display: flex;
   gap: 4px;
   pointer-events: none;
   --bar: rgba(25, 31, 40, 0.12);
   --bar-on: rgba(25, 31, 40, 0.75);
 }
-.bars.on-color { --bar: rgba(255, 255, 255, 0.3); --bar-on: #fff; }
 .bars i {
   flex: 1;
   height: 3px;
@@ -232,7 +232,7 @@ img { display: block; }
 
 /* ── 첫 장: 오퍼월 ── */
 .intro-card {
-  padding: calc(44px + var(--safe-t)) 20px calc(var(--safe-b) + 20px);
+  padding: calc(28px + var(--safe-t)) 20px calc(var(--safe-b) + 30px);
   background:
     radial-gradient(90% 40% at 100% 0%, #e3eeff 0%, transparent 70%),
     radial-gradient(70% 30% at 0% 10%, #eef4ff 0%, transparent 70%),
@@ -353,7 +353,7 @@ img { display: block; }
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: calc(48px + var(--safe-t)) 24px 44px;
+  padding: calc(40px + var(--safe-t)) 24px 44px;
   text-align: center;
   color: #fff;
   background:
@@ -375,7 +375,7 @@ img { display: block; }
 
 .app-kind {
   position: absolute;
-  top: calc(30px + var(--safe-t));
+  top: calc(18px + var(--safe-t));
   left: 20px;
   padding: 5px 10px;
   border-radius: 999px;
@@ -412,7 +412,7 @@ img { display: block; }
   position: relative;
   flex: none;
   margin-top: -26px;
-  padding: 22px 20px calc(var(--safe-b) + 14px);
+  padding: 22px 20px calc(var(--safe-b) + 26px);
   border-radius: 26px 26px 0 0;
   background: #fff;
   display: flex;
@@ -557,7 +557,33 @@ img { display: block; }
   white-space: pre-line;
   word-break: keep-all;
 }
-.outro-title em { font-style: normal; color: var(--toss); }
+/* 불리다 워드마크: 그라데이션 글자 + 밑에 그어지는 형광펜 */
+.outro-title { position: relative; z-index: 0; }
+.outro-title em {
+  position: relative;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  background: linear-gradient(100deg, #3182f6 0%, #6b5cff 55%, #a35cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.outro-title em::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0.06em;
+  height: 0.42em;
+  border-radius: 0.2em;
+  background: linear-gradient(100deg, rgba(49, 130, 246, 0.2), rgba(163, 92, 255, 0.22));
+  transform-origin: left;
+}
+.slide.is-on .outro-title em::after { animation: mark 0.6s cubic-bezier(0.3, 0.8, 0.3, 1) 0.15s both; }
+@keyframes mark { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 .countdown { position: relative; width: 52px; height: 52px; }
 .countdown svg { width: 100%; height: 100%; transform: rotate(-90deg); }
 .countdown circle { fill: none; stroke-width: 4; }
@@ -584,7 +610,7 @@ img { display: block; }
 
 @media (prefers-reduced-motion: reduce) {
   .card { transform: none; border-radius: 0; }
-  .app-icon, .cta::after, .slide.is-on .ticket { animation: none; }
+  .app-icon, .cta::after, .slide.is-on .ticket, .slide.is-on .outro-title em::after { animation: none; }
 }
 `;
 
@@ -701,7 +727,7 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
       title.style.setProperty("--c", color(fromApp));
       title.append("현재 즐기고 있는\n", el("em", null, "'" + fromApp.title + "'"), eulReul(fromApp.title) + " 만든\n불리다의 다른 앱을 소개할게요");
     } else {
-      title.textContent = "불리다가 만든\n미니앱을 소개할게요";
+      title.textContent = "불리다가 만든\n미니앱을 잠깐 소개할게요";
     }
     card.appendChild(title);
 
@@ -804,7 +830,7 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
     card.appendChild(icons);
 
     const title = el("h2", "outro-title");
-    title.append("오늘도 ", el("em", null, "'불리다'"), "와 함께\n즐겁고 행복한 하루 되세요");
+    title.append("오늘도 ", el("em", null, "불리다"), "와 함께\n즐겁고 행복한 하루 되세요");
     card.appendChild(title);
 
     const ring = el("div", "countdown");
@@ -816,11 +842,10 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
   }
 
   const slides = [];
-  function addSlide(card, label, onColor) {
+  function addSlide(card, label) {
     const s = el("section", "slide");
     s.setAttribute("aria-roledescription", "slide");
     s.setAttribute("aria-label", label);
-    s.dataset.onColor = onColor ? "1" : "";
     s.appendChild(card);
     track.appendChild(s);
     slides.push(s);
@@ -828,7 +853,7 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
   }
 
   addSlide(renderIntro(), "소개");
-  apps.forEach((app, i) => addSlide(renderApp(app, i), app.title, true));
+  apps.forEach((app, i) => addSlide(renderApp(app, i), app.title));
   addSlide(renderOutro(), "인사");
 
   // 마지막 장에 머무르면 잠시 후 닫는다. 그 전에 앞으로 넘기면 취소
@@ -866,7 +891,6 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
       slides[current]?.classList.remove("is-on");
       slides[idx]?.classList.add("is-on");
       for (let i = 0; i < bars.length; i++) bars[i].classList.toggle("done", i <= idx);
-      barsBox.classList.toggle("on-color", !!slides[idx]?.dataset.onColor);
       current = idx;
       armAutoClose(idx === slides.length - 1);
       onSlide?.({ index: idx, appName: idx > 0 && apps[idx - 1] ? apps[idx - 1].appName : null });
