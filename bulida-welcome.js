@@ -30,7 +30,7 @@ export const BULIDA_APPS = [
     kind: "game",
     icon: "https://static.toss.im/appsintoss/38941/d6095109-647d-43ff-aa61-98d44e1d664a.png",
     color: "#F2994A",
-    reward: "월드의 별을 다 모을 때마다\n토스포인트를 {최대 500원}까지 드려요",
+    reward: "별을 다 모을 때마다\n토스포인트를 {500원}까지 드려요",
     tagline: "퍼즐을 풀어서\n동물 친구들을 구해 주세요",
     points: ["귀여운 동물들이 기다리고 있어요", "스테이지마다 새로운 미션이 나와요", "잠깐씩 가볍게 즐길 수 있어요"],
     cta: "레오의 친구들 구하러 가기",
@@ -41,21 +41,10 @@ export const BULIDA_APPS = [
     kind: "game",
     icon: "https://static.toss.im/appsintoss/38941/81e19af1-8cee-4ec3-b2c1-bd918214db7a.png",
     color: "#B5532E",
-    reward: "삼국지 장수와 겨뤄서 이기면\n토스포인트를 {최대 300원} 받을 수 있어요",
+    reward: "제갈량과 겨뤄 이기면\n토스포인트 {300원} 받을 수 있어요",
     tagline: "AI와 한 판 두고\n내 장기 급수를 알아보세요",
     points: ["18급부터 9단까지 실력을 매겨 드려요", "내 급수에 맞는 상대와 둘 수 있어요", "둔 수를 하나하나 다시 짚어 드려요"],
-    cta: "삼국지 인물과 장기 두러 가기",
-  },
-  {
-    appName: "coinpusher",
-    title: "밀다 보니 커피 한 잔",
-    kind: "app",
-    icon: "https://static.toss.im/appsintoss/38941/979c2247-4eb5-4976-a9db-c91f39a22eee.png",
-    color: "#8B5A3C",
-    reward: "무료로 드리는 200코인을 놓기만해도\n토스포인트 {10원}을 바로 드려요",
-    tagline: "코인을 밀다 보면\n진짜 커피 한 잔이 생겨요",
-    points: ["진짜처럼 손맛 있는 코인 푸셔예요", "떨어진 코인은 차곡차곡 쌓여요", "모은 코인으로 커피쿠폰을 받을 수 있어요"],
-    cta: "코인 밀러 가기",
+    cta: "삼국지 등장 인물과 장기 두러 가기",
   },
   {
     appName: "beattaptap",
@@ -63,9 +52,9 @@ export const BULIDA_APPS = [
     kind: "game",
     icon: "https://static.toss.im/appsintoss/38941/live-managed-v1-bc314343-c485-4349-a3d2-d1d0f009fed8.png",
     color: "#7B4DFF",
-    reward: "오늘의 곡을 끝까지 하면\n토스포인트를 매일 {최대 4원}씩 드려요",
-    tagline: "음악에 맞춰\n떨어지는 동작을 따라 해 보세요",
-    points: ["박자에 맞춰 손가락으로 톡톡 쳐요", "내 폰에 맞게 박자를 맞춰 드려요", "곡마다 최고 기록에 도전할 수 있어요"],
+    reward: "오늘의 곡을 플레이 하면\n토스포인트를 {4원}씩 받아요",
+    tagline: "음악에 맞춰\n떨어지는 색상의 패드를 터치해요",
+    points: ["박자에 맞춰 손가락으로 탭 하거나 드래그", "내 폰에 맞게 박자를 맞춰 드려요", "곡마다 최고 기록에 도전할 수 있어요"],
     cta: "비트탭 하러 가기",
   },
   {
@@ -74,10 +63,21 @@ export const BULIDA_APPS = [
     kind: "game",
     icon: "https://static.toss.im/appsintoss/38941/live-managed-v1-45224996-3ab8-4179-ac44-b74e7d2223be.png",
     color: "#2FA35B",
-    reward: "오늘의 3홀만 다 쳐도\n토스포인트 {2원}이 매일 쌓여요",
-    tagline: "하루 3분이면\n라운드를 끝낼 수 있어요",
+    reward: "오늘의 3홀만 쳐도\n토스포인트 {2원}이 매일 쌓여요",
+    tagline: "하루 3분도 걸리지 않는\n라운딩을 즐겨봐요",
     points: ["코스가 매일 새로 바뀌어요", "매일 들어오면 새 공과 멀리건을 드려요", "지난 코스도 다시 쳐 볼 수 있어요"],
-    cta: "오늘의 코스 치러 가기",
+    cta: "오늘의 3분 코스 치러 가기",
+  },
+  {
+    appName: "coinpusher",
+    title: "밀다 보니 커피 한 잔",
+    kind: "app",
+    icon: "https://static.toss.im/appsintoss/38941/979c2247-4eb5-4976-a9db-c91f39a22eee.png",
+    color: "#8B5A3C",
+    reward: "무료 200코인을 놓기만 해도\n토스포인트 {10원}을 바로 받아요",
+    tagline: "코인을 밀다 보면\n진짜 커피 한 잔이 생겨요",
+    points: ["진짜처럼 손맛 있는 코인 푸셔예요", "떨어진 코인은 차곡차곡 쌓여요", "모은 코인으로 커피쿠폰을 받아요"],
+    cta: "코인 밀러 가기",
   },
   {
     appName: "jubjubinfo",
@@ -85,9 +85,9 @@ export const BULIDA_APPS = [
     kind: "app",
     icon: "https://static.toss.im/appsintoss/38941/live-managed-v1-9295ed7b-30c3-44d9-8d00-9511d72fb0ee.png",
     color: "#655DFF",
-    reward: "오늘 국장의 이 종목!\n오를지 내릴지 맞추면 토스포인트 {2원}을 드려요",
-    points: ["하루에 7번의 라운드, 라운드당 3종목이 준비돼요", "26년차 투자전문가와 AI가 들려주는 팟캐스트를 무료로 들어요", "주식관련 서적 1페이지만 읽어도 토스포인트를 받아요"],
-    cta: "이 종목, 오를지 내릴지 맞추기",
+    reward: "주식투자하면 필수 앱!\n오를지 내릴지 맞추면 토스포인트 {2원}을 드려요",
+    points: ["하루에 대형주 21종목이 준비돼요", "25년차 투자전문가와 AI가 들려주는 팟캐스트가 무료에요", "주식관련 서적 1페이지만 읽어도 토스포인트를 받아요"],
+    cta: "이 종목, 오를지 내릴지 맞춰보기",
   },
   // {
   //   appName: "coco",
@@ -122,23 +122,27 @@ const CSS = `
   z-index: 2147483647;
   display: block;
   overflow: hidden;
-  background: #000;
+  background: #101114;
   --safe-b: env(safe-area-inset-bottom, 0px);
   --safe-t: env(safe-area-inset-top, 0px);
   --text: #191f28;
   --sub: #4e5968;
   --muted: #8b95a1;
+  --line: #f2f4f6;
+  --toss: #3182f6;
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
+  font-family: "Toss Product Sans", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", sans-serif;
   -webkit-tap-highlight-color: transparent;
   -webkit-user-select: none;
   user-select: none;
   -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+img { display: block; }
 
 /* ── 슬라이드 트랙: 한 번 스와이프 = 한 장 ── */
 .track {
@@ -161,7 +165,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   scroll-snap-align: center;
   scroll-snap-stop: always;
   overflow: hidden;
-  background: #fff;
 }
 
 /* 넘어가는 동안 카드가 살짝 작아졌다가 돌아온다 (스크롤 위치로 --p 갱신) */
@@ -170,247 +173,418 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   inset: 0;
   display: flex;
   flex-direction: column;
-  padding: calc(56px + var(--safe-t)) 24px calc(var(--safe-b) + 32px);
+  overflow: hidden;
+  background: #fff;
   transform: scale(calc(1 - var(--p, 0) * 0.08));
-  border-radius: calc(var(--p, 0) * 28px);
+  border-radius: calc(var(--p, 0) * 32px);
   will-change: transform;
 }
 
-/* ── 앱 소개 슬라이드 ── */
-.app-card {
+/* ── 진행 막대 (스토리처럼) ── */
+.bars {
+  position: absolute;
+  top: calc(12px + var(--safe-t));
+  left: 16px;
+  right: 16px;
+  display: flex;
+  gap: 4px;
+  pointer-events: none;
+  --bar: rgba(25, 31, 40, 0.12);
+  --bar-on: rgba(25, 31, 40, 0.75);
+}
+.bars.on-color { --bar: rgba(255, 255, 255, 0.3); --bar-on: #fff; }
+.bars i {
+  flex: 1;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--bar);
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.bars i::after {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: var(--bar-on);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease, background 0.3s;
+}
+.bars i.done::after { transform: scaleX(1); }
+
+/* ── 토스포인트 동전 ── */
+.coin {
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  width: 1.25em;
+  height: 1.25em;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #4f9bff, #1b64da);
+  color: #fff;
+  font-size: 1em;
+  font-weight: 900;
+  line-height: 1;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15);
+}
+.coin::before { content: "P"; font-size: 0.62em; }
+
+/* ── 첫 장: 오퍼월 ── */
+.intro-card {
+  padding: calc(44px + var(--safe-t)) 20px calc(var(--safe-b) + 20px);
   background:
-    radial-gradient(120% 70% at 50% 0%, color-mix(in srgb, var(--c) 32%, #fff) 0%, #fff 70%);
+    radial-gradient(90% 40% at 100% 0%, #e3eeff 0%, transparent 70%),
+    radial-gradient(70% 30% at 0% 10%, #eef4ff 0%, transparent 70%),
+    #fff;
 }
 
-.app-kind {
+.eyebrow {
   align-self: flex-start;
-  padding: 6px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px 6px 8px;
   border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(49, 130, 246, 0.14);
   font-size: 13px;
   font-weight: 700;
-  color: var(--c);
-  background: color-mix(in srgb, var(--c) 14%, #fff);
+  color: var(--toss);
 }
+.eyebrow img { width: 20px; height: 20px; border-radius: 6px; }
 
-.app-hero {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 18px;
-  min-height: 0;
-}
-
-.app-icon {
-  width: min(36vw, 150px, 17vh);
-  aspect-ratio: 1;
-  border-radius: 28%;
-  object-fit: cover;
-  box-shadow: 0 18px 40px color-mix(in srgb, var(--c) 35%, transparent);
-  background: #f2f4f6;
-}
-
-.app-title { font-size: 16px; font-weight: 700; color: var(--sub); }
-
-.app-tagline {
-  font-size: clamp(24px, 7vw, 30px);
-  font-weight: 800;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  white-space: pre-line;
-}
-
-/* 토스포인트 안내 (카드 맨 위) */
-.app-reward {
+.intro-title {
   margin-top: 14px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: color-mix(in srgb, var(--c) 12%, #fff);
-  border: 1px solid color-mix(in srgb, var(--c) 22%, #fff);
-  font-size: 17px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: var(--text);
+  font-size: clamp(22px, 6.2vw, 27px);
+  font-weight: 800;
+  line-height: 1.36;
+  letter-spacing: -0.025em;
   white-space: pre-line;
   word-break: keep-all;
 }
-.app-reward strong { color: var(--c); font-weight: 800; }
+.intro-title em { font-style: normal; color: var(--c, var(--toss)); }
 
-.app-points {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 24px;
-}
-.app-points li {
+.intro-promo {
+  margin-top: 10px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 16px;
-  border-radius: 16px;
-  background: #f9fafb;
+  gap: 6px;
   font-size: 15px;
   font-weight: 600;
   color: var(--sub);
 }
+.intro-promo strong { color: var(--toss); font-weight: 800; }
+
+.offer-list {
+  flex: 1;
+  min-height: 0;
+  margin: 18px -4px 0;
+  padding: 4px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(#000 calc(100% - 28px), transparent);
+  mask-image: linear-gradient(#000 calc(100% - 28px), transparent);
+  padding-bottom: 24px;
+}
+.offer-list::-webkit-scrollbar { display: none; }
+
+.offer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px 12px 12px;
+  border-radius: 20px;
+  background: #fff;
+  border: 1px solid var(--line);
+  box-shadow: 0 4px 16px rgba(0, 20, 60, 0.05);
+  text-align: left;
+  transition: transform 0.15s;
+}
+.offer:active { transform: scale(0.98); background: #f9fafb; }
+.offer img {
+  flex: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: #f2f4f6;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.04);
+}
+.offer-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.offer-text strong { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+.offer-text span {
+  font-size: 13px;
+  color: var(--muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.offer-pay {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px 7px 8px;
+  border-radius: 999px;
+  background: #e8f3ff;
+  color: #1b64da;
+  font-size: 14px;
+  font-weight: 800;
+}
+.offer-pay .coin { font-size: 15px; }
+.offer-go { flex: none; width: 8px; height: 8px; border: solid #c5ccd4; border-width: 2px 2px 0 0; transform: rotate(45deg); margin-right: 4px; }
+
+.intro-foot { margin-top: 14px; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.intro-foot .cta { --c: var(--toss); }
+.hint { font-size: 13px; font-weight: 600; color: var(--muted); }
+
+/* ── 앱 소개 장: 위는 브랜드 색 광고, 아래는 혜택 시트 ── */
+.app-hero {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: calc(48px + var(--safe-t)) 24px 44px;
+  text-align: center;
+  color: #fff;
+  background:
+    radial-gradient(70% 55% at 50% 38%, color-mix(in srgb, var(--c) 55%, #fff) 0%, transparent 70%),
+    linear-gradient(165deg, color-mix(in srgb, var(--c) 92%, #fff) 0%, color-mix(in srgb, var(--c) 62%, #000) 100%);
+  isolation: isolate;
+}
+/* 배경 장식 원 */
+.app-hero::before,
+.app-hero::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  border: 1.5px solid rgba(255, 255, 255, 0.16);
+}
+.app-hero::before { width: 120vw; height: 120vw; max-width: 560px; max-height: 560px; left: 50%; top: 42%; transform: translate(-50%, -50%); }
+.app-hero::after { width: 78vw; height: 78vw; max-width: 360px; max-height: 360px; left: 50%; top: 42%; transform: translate(-50%, -50%); background: rgba(255, 255, 255, 0.06); }
+
+.app-kind {
+  position: absolute;
+  top: calc(30px + var(--safe-t));
+  left: 20px;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.app-icon {
+  width: min(34vw, 132px, 16vh);
+  aspect-ratio: 1;
+  border-radius: 28%;
+  object-fit: cover;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.35), 0 22px 44px rgba(0, 0, 0, 0.28);
+  animation: float 3.2s ease-in-out infinite;
+}
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-7px); } }
+
+.app-title { margin-top: 6px; font-size: 15px; font-weight: 700; opacity: 0.85; }
+.app-tagline {
+  font-size: clamp(22px, 6.6vw, 28px);
+  font-weight: 800;
+  line-height: 1.34;
+  letter-spacing: -0.025em;
+  white-space: pre-line;
+  word-break: keep-all;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.sheet {
+  position: relative;
+  flex: none;
+  margin-top: -26px;
+  padding: 22px 20px calc(var(--safe-b) + 14px);
+  border-radius: 26px 26px 0 0;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 혜택 티켓 */
+.ticket {
+  position: relative;
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--c) 8%, #fff);
+  border: 1px solid color-mix(in srgb, var(--c) 20%, #fff);
+}
+.ticket-top { display: flex; align-items: center; gap: 12px; padding: 14px 16px 12px; }
+.ticket-top .coin { font-size: 34px; }
+.ticket-label { display: flex; flex-direction: column; gap: 1px; }
+.ticket-label span { font-size: 12px; font-weight: 700; color: var(--muted); }
+.ticket-label strong {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: color-mix(in srgb, var(--c) 78%, #000);
+}
+.ticket-cut { position: relative; height: 0; margin: 0 14px; border-top: 1.5px dashed color-mix(in srgb, var(--c) 28%, #fff); }
+.ticket-cut::before,
+.ticket-cut::after {
+  content: "";
+  position: absolute;
+  top: -9px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--c) 20%, #fff);
+}
+.ticket-cut::before { left: -23px; clip-path: inset(0 0 0 50%); }
+.ticket-cut::after { right: -23px; clip-path: inset(0 50% 0 0); }
+.ticket-body {
+  padding: 11px 16px 14px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--sub);
+  white-space: pre-line;
+  word-break: keep-all;
+}
+.ticket-body strong { color: color-mix(in srgb, var(--c) 78%, #000); font-weight: 800; }
+.slide.is-on .ticket { animation: pop 0.5s cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+@keyframes pop { from { transform: scale(0.94); } to { transform: scale(1); } }
+
+.app-points { list-style: none; display: flex; flex-direction: column; gap: 9px; padding: 0 2px; }
+.app-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--sub);
+  word-break: keep-all;
+}
 .app-points li::before {
   content: "";
-  flex: 0 0 8px;
-  height: 8px;
+  flex: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
   border-radius: 50%;
-  background: var(--c);
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.2l2.6 2.6L13 6.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 100% no-repeat,
+    var(--c);
 }
 
 .cta {
+  position: relative;
   width: 100%;
   height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   border-radius: 16px;
   background: var(--c);
   color: #fff;
   font-size: 17px;
   font-weight: 700;
+  overflow: hidden;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--c) 35%, transparent);
+  transition: transform 0.15s, filter 0.15s;
 }
-.cta:active { filter: brightness(0.92); }
+.cta:active { transform: scale(0.98); filter: brightness(0.92); }
+.cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.35) 50%, transparent 65%);
+  transform: translateX(-100%);
+  animation: shine 3.2s ease-in-out 1s infinite;
+}
+@keyframes shine { 0%, 55% { transform: translateX(-100%); } 85%, 100% { transform: translateX(100%); } }
+.cta-arrow { width: 8px; height: 8px; border: solid currentColor; border-width: 2px 2px 0 0; transform: rotate(45deg); }
 
-/* ── 첫 장 ── */
-.intro-card { background: linear-gradient(180deg, #f2f6ff 0%, #fff 60%); }
-
-.intro-head { flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 14px; min-height: 0; }
-
-/* 지금 보고 있는 앱 */
-.intro-now {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 14px;
-  padding: 14px 16px;
-  border-radius: 18px;
-  background: color-mix(in srgb, var(--c) 10%, #fff);
-  border: 1px solid color-mix(in srgb, var(--c) 20%, #fff);
-}
-.intro-now img {
-  flex: 0 0 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: #f2f4f6;
-}
-.intro-now-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-.intro-now-text strong { font-size: 17px; font-weight: 800; }
-.intro-now-tagline { font-size: 13px; color: var(--sub); line-height: 1.4; word-break: keep-all; }
-
-.intro-title {
-  font-size: clamp(22px, 6vw, 28px);
-  word-break: keep-all;
-  font-weight: 800;
-  line-height: 1.35;
-  letter-spacing: -0.02em;
-  white-space: pre-line;
-}
-.intro-promo {
-  align-self: flex-start;
-  padding: 10px 14px;
-  border-radius: 12px;
-  background: #e8f3ff;
-  color: #1b64da;
-  font-size: 17px;
-  font-weight: 700;
-}
-.intro-promo strong { font-weight: 800; color: #3182f6; }
-
-.intro-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px 8px;
-  margin: 28px 0 8px;
-}
-.intro-grid button {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--sub);
-  line-height: 1.25;
-  text-align: center;
-  word-break: keep-all;
-}
-.intro-pic { position: relative; display: block; width: 100%; max-width: 64px; }
-.intro-grid img {
-  display: block;
-  width: 100%;
-  max-width: 64px;
-  aspect-ratio: 1;
-  border-radius: 28%;
-  background: #f2f4f6;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.swipe-hint {
+.next {
   align-self: center;
-  margin-top: 12px;
-  font-size: 14px;
+  margin-top: -4px;
+  padding: 4px 8px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--muted);
-  animation: nudge 1.6s ease-in-out infinite;
 }
-@keyframes nudge { 0%, 100% { transform: translateX(0); } 50% { transform: translateX(8px); } }
-
-/* ── 진행 점 ── */
-.dots {
-  position: absolute;
-  top: calc(20px + var(--safe-t));
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: center;
-  gap: 6px;
-  pointer-events: none;
-}
-.dots i {
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.15);
-  transition: width 0.25s, background 0.25s;
-}
-.dots i.on { width: 18px; background: rgba(0, 0, 0, 0.6); }
+.next b { color: var(--sub); font-weight: 700; }
 
 /* ── 마지막 장: 인사 후 자동으로 닫힘 ── */
 .outro-card {
   justify-content: center;
   align-items: center;
-  gap: 14px;
+  gap: 22px;
+  padding: 24px;
   text-align: center;
-  background: linear-gradient(180deg, #f2f6ff 0%, #fff 70%);
+  background:
+    radial-gradient(80% 50% at 50% 30%, #e3eeff 0%, transparent 70%),
+    #fff;
 }
+.outro-icons { display: flex; }
+.outro-icons img {
+  width: 52px;
+  height: 52px;
+  margin: 0 -7px;
+  border-radius: 16px;
+  border: 3px solid #fff;
+  background: #f2f4f6;
+  box-shadow: 0 6px 16px rgba(0, 20, 60, 0.12);
+}
+.outro-icons img:nth-child(odd) { transform: translateY(6px) rotate(-6deg); }
+.outro-icons img:nth-child(even) { transform: rotate(6deg); }
 .outro-title {
-  font-size: clamp(22px, 6.4vw, 28px);
+  font-size: clamp(22px, 6.4vw, 27px);
   font-weight: 800;
   line-height: 1.4;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
   white-space: pre-line;
   word-break: keep-all;
 }
-.outro-sub { font-size: 15px; font-weight: 600; color: var(--muted); }
-.outro-bar {
-  width: 120px;
-  height: 4px;
-  margin-top: 6px;
-  border-radius: 2px;
-  background: #e5e8eb;
-  overflow: hidden;
+.outro-title em { font-style: normal; color: var(--toss); }
+.countdown { position: relative; width: 52px; height: 52px; }
+.countdown svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.countdown circle { fill: none; stroke-width: 4; }
+.countdown .bg { stroke: #e5e8eb; }
+.countdown .fg { stroke: var(--toss); stroke-linecap: round; stroke-dasharray: 126; stroke-dashoffset: 126; }
+.outro-card.closing .countdown .fg { animation: ring ${CLOSE_DELAY}ms linear forwards; }
+@keyframes ring { to { stroke-dashoffset: 0; } }
+.countdown b { position: absolute; inset: 0; display: grid; place-items: center; font-size: 17px; font-weight: 800; color: var(--toss); }
+.outro-sub { margin-top: -10px; font-size: 14px; font-weight: 600; color: var(--muted); }
+
+/* 작은 화면 (iPhone SE 등) */
+@media (max-height: 700px) {
+  .app-hero { gap: 8px; padding-bottom: 38px; }
+  .app-icon { width: min(28vw, 104px, 15vh); }
+  .sheet { gap: 12px; padding-top: 18px; }
+  .ticket-top { padding: 10px 14px 8px; }
+  .ticket-top .coin { font-size: 28px; }
+  .ticket-label strong { font-size: 22px; }
+  .ticket-body { padding: 8px 14px 10px; font-size: 13px; }
+  .app-points { gap: 6px; }
+  .app-points li { font-size: 14px; }
+  .cta { height: 52px; }
 }
-.outro-bar i { display: block; width: 0; height: 100%; background: #3182f6; }
-.outro-card.closing .outro-bar i { animation: fill ${CLOSE_DELAY}ms linear forwards; }
-@keyframes fill { to { width: 100%; } }
 
 @media (prefers-reduced-motion: reduce) {
   .card { transform: none; border-radius: 0; }
-  .swipe-hint { animation: none; }
+  .app-icon, .cta::after, .slide.is-on .ticket { animation: none; }
 }
 `;
 
@@ -426,6 +600,20 @@ function eulReul(word) {
   const code = word.charCodeAt(word.length - 1) - 0xac00;
   if (code < 0 || code > 11171) return "을(를)";
   return code % 28 ? "을" : "를";
+}
+
+// reward 의 첫 {강조} 를 금액 배지로 쓴다
+function rewardAmount(app) {
+  const m = app.reward && app.reward.match(/\{([^}]*)\}/);
+  return m ? m[1] : null;
+}
+
+function img(src, cls, alt = "") {
+  const n = el("img", cls);
+  n.src = src;
+  n.alt = alt;
+  n.decoding = "async";
+  return n;
 }
 
 let active = null;
@@ -460,17 +648,19 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
 
   const track = el("div", "track");
   track.setAttribute("aria-roledescription", "carousel");
-  const dotsBox = el("div", "dots");
-  dotsBox.setAttribute("aria-hidden", "true");
-  root.append(track, dotsBox);
+  const barsBox = el("div", "bars");
+  barsBox.setAttribute("aria-hidden", "true");
+  root.append(track, barsBox);
 
   let closeTimer = null;
+  let tickTimer = null;
   let closed = false;
   function close(reason = "close") {
     if (closed) return;
     closed = true;
     active = null;
     clearTimeout(closeTimer);
+    clearInterval(tickTimer);
     window.removeEventListener("resize", onResize);
     window.removeEventListener("keydown", onKey);
     host.remove();
@@ -488,125 +678,177 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
     track.scrollTo({ left: i * track.clientWidth, behavior: smooth === false ? "auto" : "smooth" });
   }
 
+  function cta(label, onClick) {
+    const b = el("button", "cta");
+    b.type = "button";
+    b.append(label, el("i", "cta-arrow"));
+    b.addEventListener("click", onClick);
+    return b;
+  }
+
   // ── 렌더 ──
   function renderIntro() {
     const card = el("div", "card intro-card");
-    const head = el("div", "intro-head");
 
-    // 띄운 앱을 짧게 보여 주고, 그 앱을 만든 불리다의 다른 앱으로 이어 간다
+    const eyebrow = el("div", "eyebrow");
+    if (fromApp) eyebrow.appendChild(img(fromApp.icon));
+    eyebrow.append(fromApp ? "불리다가 만든 앱" : "불리다 추천");
+    card.appendChild(eyebrow);
+
+    // 띄운 앱을 짚고, 그 앱을 만든 불리다의 다른 앱으로 이어 간다
+    const title = el("h1", "intro-title");
     if (fromApp) {
-      const now = el("div", "intro-now");
-      now.style.setProperty("--c", fromApp.color);
-      const img = el("img");
-      img.src = fromApp.icon;
-      img.alt = "";
-      now.appendChild(img);
-      const text = el("div", "intro-now-text");
-      text.appendChild(el("strong", null, fromApp.title));
-      if (fromApp.tagline) text.appendChild(el("span", "intro-now-tagline", fromApp.tagline.replace(/\n/g, " ")));
-      now.appendChild(text);
-      head.appendChild(now);
-      head.appendChild(el("h1", "intro-title", "현재 즐기고 있는\n'" + fromApp.title + "'" + eulReul(fromApp.title) + " 만든\n불리다의 다른 앱을 소개할게요"));
+      title.style.setProperty("--c", color(fromApp));
+      title.append("현재 즐기고 있는\n", el("em", null, "'" + fromApp.title + "'"), eulReul(fromApp.title) + " 만든\n불리다의 다른 앱을 소개할게요");
     } else {
-      head.appendChild(el("h1", "intro-title", "불리다가 만든\n미니앱을 소개할게요"));
+      title.textContent = "불리다가 만든\n미니앱을 소개할게요";
     }
+    card.appendChild(title);
+
     // 토스포인트를 주는 앱이 있으면 제목 아래에 강조
     if (apps.some((a) => a.reward)) {
       const promo = el("p", "intro-promo");
-      promo.append("즐기는 만큼 ", el("strong", null, "토스포인트"), "도 더 받아 보세요");
-      head.appendChild(promo);
+      const words = el("span");
+      words.append("즐기는 만큼 ", el("strong", null, "토스포인트"), "도 더 받아 보세요");
+      promo.append(el("i", "coin"), words);
+      card.appendChild(promo);
     }
 
-    const grid = el("div", "intro-grid");
+    // 오퍼월: 앱마다 받을 수 있는 토스포인트를 한눈에
+    const list = el("ul", "offer-list");
     apps.forEach((app, i) => {
-      const b = el("button");
+      const li = el("li");
+      const b = el("button", "offer");
       b.type = "button";
-      const pic = el("span", "intro-pic");
-      const icon = el("img");
-      icon.src = app.icon;
-      icon.alt = "";
-      pic.appendChild(icon);
-      b.append(pic, el("span", null, app.title));
+      b.appendChild(img(app.icon));
+      const text = el("span", "offer-text");
+      text.append(
+        el("strong", null, app.title),
+        el("span", null, app.tagline ? app.tagline.replace(/\n/g, " ") : app.kind === "game" ? "게임" : "앱"),
+      );
+      b.appendChild(text);
+      const amount = rewardAmount(app);
+      if (amount) {
+        const pay = el("span", "offer-pay");
+        pay.append(el("i", "coin"), amount);
+        b.appendChild(pay);
+      } else {
+        b.appendChild(el("i", "offer-go"));
+      }
       b.addEventListener("click", () => goTo(i + 1));
-      grid.appendChild(b);
+      li.appendChild(b);
+      list.appendChild(li);
     });
-    head.appendChild(grid);
+    card.appendChild(list);
 
-    card.append(head, el("div", "swipe-hint", "끝까지 넘기면 닫혀요 →"));
+    const foot = el("div", "intro-foot");
+    foot.append(cta("하나씩 둘러보기", () => goTo(1)), el("p", "hint", "끝까지 넘기면 닫혀요"));
+    card.appendChild(foot);
     return card;
   }
 
-  function renderApp(app) {
+  function renderApp(app, i) {
     const card = el("div", "card app-card");
-    card.style.setProperty("--c", app.color);
-
-    card.appendChild(el("span", "app-kind", app.kind === "game" ? "게임" : "앱"));
-
-    // 토스포인트 안내는 카드 맨 위에
-    if (app.reward) {
-      const reward = el("p", "app-reward");
-      app.reward.split(/\{([^}]*)\}/).forEach((part, i) => {
-        reward.append(i % 2 ? el("strong", null, part) : part);
-      });
-      card.appendChild(reward);
-    }
+    card.style.setProperty("--c", color(app));
 
     const hero = el("div", "app-hero");
-    const icon = el("img", "app-icon");
-    icon.src = app.icon;
-    icon.alt = app.title + " 아이콘";
+    hero.appendChild(el("span", "app-kind", app.kind === "game" ? "게임" : "앱"));
+    const icon = img(app.icon, "app-icon", app.title + " 아이콘");
     icon.loading = "lazy";
     hero.append(icon, el("p", "app-title", app.title));
     if (app.tagline) hero.appendChild(el("h2", "app-tagline", app.tagline));
     card.appendChild(hero);
 
+    const sheet = el("div", "sheet");
+
+    // 토스포인트 혜택은 티켓으로
+    const amount = rewardAmount(app);
+    if (amount) {
+      const ticket = el("div", "ticket");
+      const top = el("div", "ticket-top");
+      const label = el("div", "ticket-label");
+      label.append(el("span", null, "받을 수 있는 토스포인트"), el("strong", null, amount));
+      top.append(el("i", "coin"), label);
+      const body = el("p", "ticket-body");
+      app.reward.split(/\{([^}]*)\}/).forEach((part, k) => {
+        body.append(k % 2 ? el("strong", null, part) : part);
+      });
+      ticket.append(top, el("div", "ticket-cut"), body);
+      sheet.appendChild(ticket);
+    }
+
     const ul = el("ul", "app-points");
     (app.points || []).forEach((p) => ul.appendChild(el("li", null, p)));
-    card.appendChild(ul);
+    sheet.appendChild(ul);
 
-    const cta = el("button", "cta", app.cta || app.title + " 바로가기");
-    cta.type = "button";
-    cta.addEventListener("click", () => openApp(app));
-    card.appendChild(cta);
+    sheet.appendChild(cta(app.cta || app.title + " 바로가기", () => openApp(app)));
+
+    // 다음 장 예고
+    const nextApp = apps[i + 1];
+    const next = el("button", "next");
+    next.type = "button";
+    if (nextApp) next.append("다음 · ", el("b", null, nextApp.title), " ›");
+    else next.textContent = "마지막 앱이에요 · 넘기면 닫혀요";
+    next.addEventListener("click", () => goTo(i + 2));
+    sheet.appendChild(next);
+
+    card.appendChild(sheet);
     return card;
   }
 
+  let countNum;
   function renderOutro() {
     const card = el("div", "card outro-card");
-    card.appendChild(el("h2", "outro-title", "오늘도 '불리다'와 함께\n즐겁고 행복한 하루 되세요"));
-    card.appendChild(el("p", "outro-sub", "잠시 후 자동으로 닫혀요"));
-    const bar = el("div", "outro-bar");
-    bar.appendChild(el("i"));
-    card.appendChild(bar);
+    const icons = el("div", "outro-icons");
+    allApps.slice(0, 5).forEach((a) => icons.appendChild(img(a.icon)));
+    card.appendChild(icons);
+
+    const title = el("h2", "outro-title");
+    title.append("오늘도 ", el("em", null, "'불리다'"), "와 함께\n즐겁고 행복한 하루 되세요");
+    card.appendChild(title);
+
+    const ring = el("div", "countdown");
+    ring.innerHTML = '<svg viewBox="0 0 48 48"><circle class="bg" cx="24" cy="24" r="20"/><circle class="fg" cx="24" cy="24" r="20"/></svg>';
+    countNum = el("b", null, String(CLOSE_DELAY / 1000));
+    ring.appendChild(countNum);
+    card.append(ring, el("p", "outro-sub", "잠시 후 자동으로 닫혀요"));
     return card;
   }
 
   const slides = [];
-  function addSlide(card, label) {
+  function addSlide(card, label, onColor) {
     const s = el("section", "slide");
     s.setAttribute("aria-roledescription", "slide");
     s.setAttribute("aria-label", label);
+    s.dataset.onColor = onColor ? "1" : "";
     s.appendChild(card);
     track.appendChild(s);
     slides.push(s);
-    dotsBox.appendChild(el("i"));
+    barsBox.appendChild(el("i"));
   }
 
   addSlide(renderIntro(), "소개");
-  apps.forEach((app) => addSlide(renderApp(app), app.title));
+  apps.forEach((app, i) => addSlide(renderApp(app, i), app.title, true));
   addSlide(renderOutro(), "인사");
 
   // 마지막 장에 머무르면 잠시 후 닫는다. 그 전에 앞으로 넘기면 취소
   function armAutoClose(on) {
     const outro = slides[slides.length - 1].firstChild;
     clearTimeout(closeTimer);
+    clearInterval(tickTimer);
     closeTimer = null;
     outro.classList.toggle("closing", on);
-    if (on) closeTimer = setTimeout(() => close("close"), CLOSE_DELAY);
+    countNum.textContent = String(CLOSE_DELAY / 1000);
+    if (!on) return;
+    const end = Date.now() + CLOSE_DELAY;
+    tickTimer = setInterval(() => {
+      countNum.textContent = String(Math.max(1, Math.ceil((end - Date.now()) / 1000)));
+    }, 200);
+    closeTimer = setTimeout(() => close("close"), CLOSE_DELAY);
   }
 
-  // ── 스크롤 위치 → 진행 점, 카드 축소 효과 ──
-  const dots = dotsBox.children;
+  // ── 스크롤 위치 → 진행 막대, 카드 축소 효과 ──
+  const bars = barsBox.children;
   let current = -1;
   let ticking = false;
 
@@ -621,8 +863,10 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
     }
     const idx = Math.round(pos);
     if (idx !== current) {
-      dots[current]?.classList.remove("on");
-      dots[idx]?.classList.add("on");
+      slides[current]?.classList.remove("is-on");
+      slides[idx]?.classList.add("is-on");
+      for (let i = 0; i < bars.length; i++) bars[i].classList.toggle("done", i <= idx);
+      barsBox.classList.toggle("on-color", !!slides[idx]?.dataset.onColor);
       current = idx;
       armAutoClose(idx === slides.length - 1);
       onSlide?.({ index: idx, appName: idx > 0 && apps[idx - 1] ? apps[idx - 1].appName : null });
@@ -656,4 +900,8 @@ export function showBulidaWelcome({ from, openURL, onClose, onSlide, apps: allAp
 
   active = () => close("close");
   return active;
+}
+
+function color(app) {
+  return app.color || "#3182f6";
 }
