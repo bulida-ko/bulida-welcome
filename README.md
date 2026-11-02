@@ -58,9 +58,9 @@ showBulidaWelcome({ from: "minigolf", openURL });
 | `ready` | 로드 끝 | — |
 | `slide` | 장이 바뀜 (`index`, `appName`) | 원하면 로그 |
 | `open` | 이동 버튼 (`appName`, `url`) | `openURL(url)` 후 닫기 |
-| `close` | 마지막 인사 장에서 2초 뒤 | iframe 제거 |
+| `close` | 마지막 인사 장에서 5초 뒤 | iframe 제거 |
 
-페이지에는 닫기 버튼이 없다. 마지막 장("오늘도 '불리다'와 함께 …")에 닿으면 2초 뒤 `close` 를 보내고,
+페이지에는 닫기 버튼이 없다. 마지막 장("오늘도 '불리다'와 함께 …")에 닿으면 5초 뒤 `close` 를 보내고,
 그 전에 앞 장으로 돌아가면 취소된다.
 
 ## 확인할 것

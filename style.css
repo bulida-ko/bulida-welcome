@@ -289,7 +289,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   overflow: hidden;
 }
 .outro-bar i { display: block; width: 0; height: 100%; background: #3182f6; }
-.outro-card.closing .outro-bar i { animation: fill 2s linear forwards; }
+.outro-card.closing .outro-bar i { animation: fill 5s linear forwards; }
 @keyframes fill { to { width: 100%; } }
 
 @media (prefers-reduced-motion: reduce) {

@@ -184,7 +184,7 @@
   addSlide(renderOutro(), "인사");
 
   // 마지막 장에 머무르면 잠시 후 닫는다. 그 전에 앞으로 넘기면 취소
-  var CLOSE_DELAY = 2000;
+  var CLOSE_DELAY = 5000;
   var closeTimer = null;
   function armAutoClose(on) {
     var outro = slides[slides.length - 1].firstChild;
