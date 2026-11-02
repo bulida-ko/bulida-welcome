@@ -3,16 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
-  <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <title>불리다 미니앱</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>불리다 미니앱 소개 미리보기</title>
+  <style>
+    body { margin: 0; height: 100vh; display: grid; place-items: center; font-family: sans-serif; }
+    button { padding: 12px 20px; font-size: 16px; }
+  </style>
 </head>
 <body>
-  <main id="track" class="track" aria-roledescription="carousel"></main>
+  <!-- 로컬 확인용. 미니앱은 bulida-welcome.js 만 import 한다 -->
+  <button id="show" type="button">다시 띄우기</button>
 
-  <div id="dots" class="dots" aria-hidden="true"></div>
+  <script type="module">
+    import { showBulidaWelcome } from "./bulida-welcome.js";
 
-  <script src="apps.js"></script>
-  <script src="app.js"></script>
+    const from = new URLSearchParams(location.search).get("from") || undefined;
+    const show = () =>
+      showBulidaWelcome({
+        from,
+        openURL: (url) => console.log("openURL", url),
+        onClose: (reason) => console.log("close", reason),
+        onSlide: (e) => console.log("slide", e),
+      });
+
+    document.getElementById("show").addEventListener("click", show);
+    show();
+  </script>
 </body>
 </html>
